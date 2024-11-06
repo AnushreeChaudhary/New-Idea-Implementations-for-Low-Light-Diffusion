@@ -30,7 +30,9 @@ def parse_args_and_config():
 
     with open(os.path.join("configs", args.config), "r") as f:
         config = yaml.safe_load(f)
-    config['lambda_lpips'] = config.get('lambda_lpips', 0.5)  # Default to 0.5 if not specified #line change for lpips
+        
+    config['lambda_lpips'] = config.get('lambda_lpips', 0.5)  # Default to 0.5 if not specified
+    
     new_config = dict2namespace(config)
 
     return args, new_config
