@@ -275,7 +275,7 @@ class DenoisingDiffusion(object):
 
                 output = self.model(x)
             
-                noise_loss, photo_loss, frequency_loss, high_frequency_loss = self.estimation_loss(x, output, beta = 0.001)
+                noise_loss, photo_loss, frequency_loss, high_frequency_loss = self.estimation_loss(x, output, beta=0.000001)
 
                 loss = noise_loss + photo_loss + frequency_loss + high_frequency_loss
 
@@ -307,7 +307,7 @@ class DenoisingDiffusion(object):
                         
             self.scheduler.step()
 
-    def estimation_loss(self, x, output, beta=0.001):
+    def estimation_loss(self, x, output, beta=0.000001):
      
         input_high0, input_high1, gt_high0, gt_high1 = output["input_high0"], output["input_high1"],\
                                                        output["gt_high0"], output["gt_high1"]
