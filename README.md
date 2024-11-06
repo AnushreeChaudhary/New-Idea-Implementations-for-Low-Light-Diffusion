@@ -18,7 +18,7 @@ LOLv1 dataset: Chen Wei, Wenjing Wang, Wenhan Yang, and Jiaying Liu. "Deep Retin
 
 
 ## Pre-trained Model
-Pre-trained models are available for download here: [[Google Drive]](https://drive.google.com/file/d/1UbUY4M8b4SMOOnmD_RcUAmWo09SuhXjt/view?usp=sharing)
+Pre-trained models are available for download here: [[Google Drive]](https://drive.google.com/file/d/14lZUEyI4lMYsoDQtkKgAbwoDOSwqnUYc/view?usp=sharing)
 
 ## How can you train the model?
 Ensure that the file paths are mentioned correctly in the configuration file.
